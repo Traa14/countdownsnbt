@@ -10,6 +10,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    touch-action: manipulation;
     background: linear-gradient(135deg,#0a2a66,#0f4c9c);
 }
 
