@@ -1,3 +1,8 @@
+html, body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
+}
 body{
     margin:0;
     font-family:Arial;
@@ -5,8 +10,6 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-
-    /* warna mirip SNPMB */
     background: linear-gradient(135deg,#0a2a66,#0f4c9c);
 }
 
@@ -15,6 +18,7 @@ body{
     color:white;
     position:relative;
     z-index:1;
+    max-width:90%;
 }
 
 h1{
@@ -36,16 +40,12 @@ h1{
     border-radius:15px;
     backdrop-filter: blur(10px);
     width:110px;
-
-    /* efek card lebih hidup */
     box-shadow:0 10px 25px rgba(0,0,0,0.3);
 }
 
 .time-box span{
     font-size:40px;
     font-weight:bold;
-
-    /* warna angka seperti aksen SNPMB */
     color:#ffd54f;
 }
 
@@ -82,3 +82,37 @@ h1{
     z-index:0;
 }
 
+@media (max-width:768px){
+
+    h1{
+        font-size:28px;
+        margin-bottom:30px;
+    }
+
+    #countdown{
+        gap:10px;
+    }
+
+    .time-box{
+        width:70px;
+        padding:15px;
+        border-radius:12px;
+    }
+
+    .time-box span{
+        font-size:26px;
+    }
+
+    .time-box p{
+        font-size:12px;
+    }
+
+    .logo-bg{
+        width:300px;
+        height:300px;
+    }
+
+    .credit{
+        font-size:14px;
+    }
+}
