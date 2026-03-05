@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    font-family:Arial;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    /* warna mirip SNPMB */
+    background: linear-gradient(135deg,#0a2a66,#0f4c9c);
+}
+
+.container{
+    text-align:center;
+    color:white;
+    position:relative;
+    z-index:1;
+}
+
+h1{
+    margin-bottom:40px;
+    letter-spacing:2px;
+    text-shadow:
+    0 0 10px rgba(0,0,0,0.8),
+    0 0 20px rgba(0,0,0,0.6);
+}
+
+#countdown{
+    display:flex;
+    gap:20px;
+}
+
+.time-box{
+    background: rgba(255,255,255,0.15);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter: blur(10px);
+    width:110px;
+
+    /* efek card lebih hidup */
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.time-box span{
+    font-size:40px;
+    font-weight:bold;
+
+    /* warna angka seperti aksen SNPMB */
+    color:#ffd54f;
+}
+
+.time-box p{
+    margin:0;
+    font-size:14px;
+    color:#e0e0e0;
+}
+.credit{
+    margin-top:25px;
+    font-size:16px;
+    font-weight:bold;
+    color:#ffd54f;
+
+    text-shadow: 
+    0 0 5px rgba(0,0,0,0.8),
+    0 0 10px rgba(0,0,0,0.6);
+
+    position:relative;
+    z-index:2;
+}
+
+.logo-bg{
+    position:absolute;
+    width:500px;
+    height:500px;
+
+    background-image:url('itb.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    opacity:0.5; 
+    z-index:0;
+}
+
